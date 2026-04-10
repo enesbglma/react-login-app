@@ -37,9 +37,35 @@ main {
 }
 
 .movie {
-  transition: transform 0.2s;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  background-color: #212529 !important;
+  border: 1px solid #333 !important;
+  overflow: hidden;
 }
 
 .movie:hover {
-  transform: translateY(-5px);
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5) !important;
+  border-color: #444;
+}
+
+.movie .card-body {
+  background-color: #212529 !important;
+  border-top: 1px solid #333;
+}
+
+.fs-13n{
+  font-size: 13px !important;
+}
+
+.narin-buton{
+  border-width: 1px !important;
+  line-height: 1.2 !important;
+  padding: 4px 10px !important;
+  transition: all 0.2s ease-in-out;
+}
+
+.narin-buton:hover{
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: #fff !important;
 }
